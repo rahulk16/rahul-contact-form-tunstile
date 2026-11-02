@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <section class="contact-card">
+
+      <div class="eyebrow">GET IN TOUCH</div>
+
+      <h1>Contact us</h1>
+
+      <p class="description">
+        Have a question or need assistance?
+        Send us a message using the form below.
+      </p>
+
+      <form id="contact-form">
+
+        <div class="field">
+          <label for="name">Full name</label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            maxlength="100"
+            autocomplete="name"
+            placeholder="Enter your full name"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            maxlength="254"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            maxlength="150"
+            placeholder="How can we help?"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            maxlength="5000"
+            rows="5"
+            placeholder="Tell us a little more..."
+            required
+          ></textarea>
+        </div>
+
+        <button id="submit-button" type="submit">
+          <span id="button-text">Send message</span>
+        </button>
+
+        <div
+          id="form-status"
+          class="form-status"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+      </form>
+
+      <div class="footer-note">
+        We appreciate you getting in touch.
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
