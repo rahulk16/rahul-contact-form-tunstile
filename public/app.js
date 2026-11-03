@@ -26,7 +26,7 @@ window.onTurnstileLoad = function () {
   turnstileWidgetId = window.turnstile.render(
     "#turnstile-container",
     {
-      sitekey: "0x4AAAAAAFvQm3AXesBihsrR",
+      sitekey: "0x4AAAAAAFxy6RsJWu2w_ymw",
       action: "contact_form",
       execution: "execute",
       appearance: "execute",
