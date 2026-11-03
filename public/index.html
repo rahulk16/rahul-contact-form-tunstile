@@ -84,6 +84,10 @@
           ></textarea>
         </div>
 
+        <!-- //1. Add a Turnstile container inside the form ----> 
+        <div id="turnstile-container"></div>
+        <!-- ------ -->
+
         <button id="submit-button" type="submit">
           <span id="button-text">Send message</span>
         </button>
@@ -103,5 +107,14 @@
 
     </section>
   </main>
+
+  <!-- //2. Load the Turnstile API -- new -->
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad"
+    async
+    defer
+  ></script>
+  <!-- ------ -->
+
 </body>
 </html>
